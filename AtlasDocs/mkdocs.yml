@@ -19,14 +19,14 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_description: A Material Design theme for MkDocs
-site_author: Martin Donath
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_name: Atlas Reality Documentation
+site_description: Development Guide for the Atlas Reality Browser
+site_author: Jordan Campbell
+site_url: atlasreality.xyz/documentation
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: Jordan-Campbell/Atlas-Documentation
+repo_url: https://github.com/Jordan-Campbell/Atlas-Documentation
 edit_uri: ""
 
 # Copyright
