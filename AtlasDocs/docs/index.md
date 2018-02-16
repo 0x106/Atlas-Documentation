@@ -4,7 +4,7 @@
 
 Atlas is a web browser for augmented reality. By default, any website can be rendered
 into a 3D scene -- however Atlas makes it easy to make small adjustments, upload
-3D models, or build entire 3D scenes using popular frameworks like A-Frame.
+3D models, or build entire 3D environments using popular frameworks like A-Frame.
 
 <!-- [![Material for MkDocs](assets/images/material.png)](assets/images/material.png)
 
@@ -42,7 +42,6 @@ With an associated stylesheet:
 
 ```
 // atlas-style.json
-
 
 {
   "mycomponent": {
