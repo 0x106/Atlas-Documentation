@@ -1,50 +1,80 @@
-# Material <small>for MkDocs</small>
+# Atlas Reality
 
-!!! info "Call for Contributions: Add languages/translations to Material"
+## Where the web meets the world
 
-    Help translate Material into more languages - it's just **one click** and
-    takes approximately **2 minutes**: [click here](http://bit.ly/2EbzFc8)
+Atlas is a web browser for augmented reality. By default, any website can be rendered
+into a 3D scene -- however Atlas makes it easy to make small adjustments, upload
+3D models, or build entire 3D scenes using popular frameworks like A-Frame.
 
-## Create beautiful project documentation
-
-Material is a theme for [MkDocs][1], an excellent static site generator geared
-towards project documentation. It is built using Google's [Material Design][2]
-guidelines.
-
-[![Material for MkDocs](assets/images/material.png)](assets/images/material.png)
+<!-- [![Material for MkDocs](assets/images/material.png)](assets/images/material.png)
 
   [1]: http://www.mkdocs.org
-  [2]: https://material.io/guidelines/material-design/
+  [2]: https://material.io/guidelines/material-design/ -->
 
 ## Quick start
 
-Install the latest version of Material with `pip`:
+Simply add `-data-atlas-<component>` attributes to any `HTML` elements you want to
+style. These attributes are ignored by the browser, so don't affect your website when
+it's viewed on a screen.
 
-``` sh
-pip install mkdocs-material
+```
+// index.html
+
+<html>
+  <head>
+    <atlas id="atlas-style"></atlas>
+  </head>
+
+  <body>
+
+    <h1>This heading will be the same on the web and in Atlas</h1>
+
+    <p -data-atlas-mycomponent>
+      This paragraph will be normal on the web, but styled in Atlas!
+    </p>
+
+  </body>
+</html>
 ```
 
-Append the following line to your project's `mkdocs.yml`:
+With an associated stylesheet:
 
-``` yaml
-theme:
-  name: 'material'
+
+```
+// atlas-style.json
+
+
+{
+  "mycomponent": {
+
+       "rotation": "(0, 0.7854, 0)",
+       "background-color": "(73, 91, 73)",
+       "scale": "(4.0, 4.0, 1.0)"
+
+  }
+}
 ```
 
-## What to expect
+You serve your `HTML` as normal, and upload `atlas-style.json` to the Atlas Cloud - easy!
 
-* Responsive design and fluid layout for all kinds of screens and devices,
-  designed to serve your project documentation in a user-friendly way in 21
-  languages with optimal readability.
+When someone requests your domain in Atlas - we extract the relevant stylesheet from the
+`<atlas>` tag and apply the styling.
 
-* Easily customizable primary and accent color, fonts, favicon and logo;
-  straight forward localization through theme extension; integrated with Google
-  Analytics, Disqus and GitHub.
+You only have to specify styling for elements that you want to change - everything else
+will be rendered into a default 3D configuration.
 
-* Well-designed search interface accessible through hotkeys (<kbd>F</kbd> or
-  <kbd>S</kbd>), intelligent grouping of search results, search term
-  highlighting and lazy loading.
 
-For detailed instructions see the [getting started guide][3].
 
-  [3]: getting-started.md
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END -->

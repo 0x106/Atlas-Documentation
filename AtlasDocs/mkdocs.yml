@@ -19,10 +19,10 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Atlas Reality Documentation
+site_name: Atlas Reality
 site_description: Development Guide for the Atlas Reality Browser
 site_author: Jordan Campbell
-site_url: atlasreality.xyz/documentation
+site_url: http://atlasreality.xyz/documentation
 
 # Repository
 repo_name: Jordan-Campbell/Atlas-Documentation
@@ -65,11 +65,12 @@ extra:
     - type: globe
       link: http://struct.cc
     - type: github-alt
-      link: https://github.com/squidfunk
+      link: https://github.com/Jordan-Campbell
     - type: twitter
-      link: https://twitter.com/squidfunk
-    - type: linkedin
-      link: https://linkedin.com/in/squidfunk
+      link: https://twitter.com/jordanNZ_AR
+
+extra_css:
+  - 'stylesheets/extra.css'
 
 # Extensions
 markdown_extensions:
@@ -101,21 +102,23 @@ markdown_extensions:
 
 # Page tree
 pages:
-  - Material: index.md
-  - Getting started: getting-started.md
-  - Extensions:
-    - Admonition: extensions/admonition.md
-    - CodeHilite: extensions/codehilite.md
-    - Footnotes: extensions/footnotes.md
-    - Metadata: extensions/metadata.md
-    - Permalinks: extensions/permalinks.md
-    - PyMdown: extensions/pymdown.md
-  - Specimen: specimen.md
-  - Customization: customization.md
-  - Release notes: release-notes.md
-  - Author's notes: authors-notes.md
-  - Contributing: contributing.md
-  - License: license.md
+  - Getting Started: index.md
+  # - Getting started: getting-started.md
+  - API: documentation.md
+  - Example: example.md
+  # - Extensions:
+    # - Admonition: extensions/admonition.md
+    # - CodeHilite: extensions/codehilite.md
+    # - Footnotes: extensions/footnotes.md
+    # - Metadata: extensions/metadata.md
+    # - Permalinks: extensions/permalinks.md
+    # - PyMdown: extensions/pymdown.md
+  # - Specimen: specimen.md
+  # - Customization: customization.md
+  # - Release notes: release-notes.md
+  # - Author's notes: authors-notes.md
+  # - Contributing: contributing.md
+  # - License: license.md
 
 # Google Analytics
 google_analytics:
