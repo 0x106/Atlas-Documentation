@@ -17,36 +17,53 @@ would prefer that it is then set the `isVisible` property to `true` on the `body
 (Coming soon: please see a full list of the default visibility for various `HTML`
   tags.)
 
+## isHidden
+
+`"isHidden": "<true><false>"`
+
+Determines whether this component is currently visible. Nodes will still be rendered,
+however they will not be visible. This property can be used to show and hide
+components with animations.
+
 ## Geometric Properties
 
 ### position
 
 `"position": "(<x>, <y>, <z>)"`
 
-- Default: (0,0,0)
-<!-- should this be absolute position? -->
-- Determines _offset_ from generic position
-<!-- should the units be metres or pixels? -->
-- Units:
-- Can be Int / Float
+Determines the position of the component in 3D space. Note that this position is
+an _offset_ from the default. This means that setting the position to `(0,0,0)`
+will leave the component in its default position, rather than moving it to the
+origin.
+
+The 3D position of a component is measured in metres -- such that `1px = 1mm`.
+
+Content which occupies a width of 1000px on a screen will occupy one metre in 3D space.
+
+The z-axis points towards the camera, so a negative `z` value will move further away
+from the user. The y-axis points towards the sky -- which is the inverse of `y` values
+in a conventional browser.
+
+### absolute-position
+
+`"absolute-position": "(<x>, <y>, <z>)"`
+
+Moves the component to the specified position.
 
 ### rotation
 
 `"rotation": "(<pitch>, <yaw>, <roll>)"`
 
-- Default: (0,0,0)
-<!-- should this be absolute position? -->
-- Determines _offset_ from generic rotation
-- Units: radians
+Determines the rotation of the component in 3D space - about its central axes. The
+default rotation is `(0,0,0)` -- facing towards the camera.
 
 ### scale
 
 `"scale ": "(<x>, <y>, <z>)"`
 
-- Default: (1.0,1.0,1.0)
-- Determines object scale relative to default render
-<!-- what are the units of scale -->
-- Units: (Float)
+Determines object scale relative to the default render. By default the scale is
+`(1.0, 1.0, 1.0)`, therefore if one of the values is ignored then it must be set
+to 1.0, rather than 0.0.
 
 ### pivot
 
