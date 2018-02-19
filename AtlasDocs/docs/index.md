@@ -13,7 +13,7 @@ into a 3D scene -- however Atlas makes it easy to make small adjustments, upload
 
 ## Quick start
 
-Simply add `-data-atlas-<component>` attributes to any `HTML` elements you want to
+Simply add `-data-atlas-<component>` attributes to any HTML elements you want to
 style. These attributes are ignored by the browser, so don't affect your website when
 it's viewed on a screen.
 

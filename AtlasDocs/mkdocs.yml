@@ -105,6 +105,7 @@ pages:
   - Getting Started: index.md
   # - Getting started: getting-started.md
   - API: documentation.md
+  - Animations: animations.md
   - 3D Models: models.md
   - A-Frame: aframe.md
   - Example: example.md

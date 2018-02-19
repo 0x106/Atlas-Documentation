@@ -1,13 +1,11 @@
 # Models
 
-Coming soon.
-
 ## Introduction
 
 Atlas supports adding 3D models to your scene, using the following formats:
 
-- `.dae`
-- `.scn`
+- `.dae` (Collada)
+- `.scn` (Apple default)
 
 To use a model in your scene it needs to be uploaded to the Atlas Cloud.
 
@@ -57,8 +55,11 @@ If your model is not attached to any existing components then you can add it to 
 
 Your model will be positioned in the centre of this component - however you can move it using the `position`
 attribute in its specification. As a simple example, the left hand edge of the models bounding box can be
-positioned at the pseudo left hand edge of the page by setting its `x` value to: `<model-width> - 624`, based
+positioned at the pseudo left hand edge of the page by setting its `x` value to: `<model-width> - 642`, based
 on the actual width of your model.
+
+These values, 1284 and 642, are the default width of the scene. This corresponds to a screen width
+of 1284 pixels, which is 1.284 metres in real world space.
 
 <!-- The easiest way to position a model in the scene is to attach it to an existing HTML component,
 and then adjust its `position` value.

@@ -14,14 +14,14 @@ you want to force to be rendered.
 By default the `body` component of any webpage is not rendered in Atlas. If you
 would prefer that it is then set the `isVisible` property to `true` on the `body`.
 
-(Coming soon: please see a full list of the default visibility for various `HTML`
-  tags.)
+<!-- (Coming soon: please see a full list of the default visibility for various `HTML`
+  tags.) -->
 
 ## isHidden
 
 `"isHidden": "<true><false>"`
 
-Determines whether this component is currently visible. Nodes will still be rendered,
+Determines whether this component is currently visible. Hidden components will still be rendered,
 however they will not be visible. This property can be used to show and hide
 components with animations.
 
@@ -36,7 +36,7 @@ an _offset_ from the default. This means that setting the position to `(0,0,0)`
 will leave the component in its default position, rather than moving it to the
 origin.
 
-The 3D position of a component is measured in metres -- such that `1px = 1mm`.
+The 3D position of a component is measured in metres -- therefore `1px = 1mm`.
 
 Content which occupies a width of 1000px on a screen will occupy one metre in 3D space.
 
@@ -65,14 +65,14 @@ Determines object scale relative to the default render. By default the scale is
 `(1.0, 1.0, 1.0)`, therefore if one of the values is ignored then it must be set
 to 1.0, rather than 0.0.
 
-### pivot
+<!-- ### pivot
 
 Coming soon.
 
 The position of the node that transformations are applied to. By default this aligns with the
 origin of the component (in the center?).
 
-Shifting the pivot allows you to rotate (and translate) a component about any arbitrary point.
+Shifting the pivot allows you to rotate (and translate) a component about any arbitrary point. -->
 
 ### geometry
 
@@ -100,8 +100,8 @@ All colors are specified in the format:
 
 `"<color>": "(<r>, <g>, <b>, <a>?)"`
 
-where `<a>`, the alpha (opacity) component, is optional. The `<r>, <g>, <b>` values
-are in the range [0 - 255] and the alpha value is in the range [0.0 - 1.0]
+where `<a>`, the opacity component, is optional. The `<r>, <g>, <b>` values
+are in the range [0 - 255] while the opacity value is in the range [0.0 - 1.0]
 
 Examples of valid colors are:
 
@@ -122,7 +122,7 @@ text that appears in the component.
 `"background-color": "(<r>, <g>, <b>, <a>?)"`
 
 Specifies the color of the background of a component. This will also specify the
-color of the geomtry a component is attached to.
+color of the geometry a component is attached to.
 
 For instance if a component is rendered to a sphere, with the `geometry` property,
 then the sphere color will be determined by the `background-color` property.
@@ -171,7 +171,7 @@ Negative border widths will be set to zero.
 
 `"border-bottom-width": "<width>"`
 
-## Fonts
+<!-- ## Fonts
 
 ### font
 
@@ -183,7 +183,7 @@ Coming soon.
 
 ### font-weight  
 
-Coming soon.
+Coming soon. -->
 
 ## Models
 
